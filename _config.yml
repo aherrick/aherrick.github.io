@@ -11,9 +11,10 @@ email: aj@andrewherrick.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome all!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://aherrick.github.io" # the base hostname & protocol for your site
 twitter_username: andrew_herrick
 github_username:  aherrick
+facebook_username: aherrick
 
 # Build settings
 markdown: kramdown
