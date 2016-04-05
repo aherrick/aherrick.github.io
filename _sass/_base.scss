@@ -191,6 +191,7 @@ pre {
 /**
  * Icons
  */
+ 
 .icon {
 
     > svg {
@@ -202,5 +203,16 @@ pre {
         path {
             fill: $grey-color;
         }
+    }
+}
+
+/* TODO how to git rid of CSS duplicataion */
+.icon-nofill {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
     }
 }
