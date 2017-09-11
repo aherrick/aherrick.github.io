@@ -1,7 +1,7 @@
 
 $(function () {
 
-    var yql_query = 'select * from html where url="http://www.scorespro.com/soccer/england/premier-league/2014-2015/standings/"';
+    var yql_query = 'select * from html where url="https://www.scorespro.com/soccer/england/premier-league/2017-2018/standings/"';
     yql_query += " and xpath='//*[@id=\"standings_1a\"]'";
     yql_query = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(yql_query) + '&format=html&callback=?';
 
