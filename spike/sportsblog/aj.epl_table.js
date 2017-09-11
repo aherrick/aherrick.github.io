@@ -1,12 +1,18 @@
 
 $(function () {
 
-    var yql_query = 'select * from html where url="https://www.scorespro.com/soccer/england/premier-league/2017-2018/standings/"';
+    
+    //https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20htmlstring%20where%20url%3D%22http%3A%2F%2Fwww.scorespro.com%2Fsoccer%2Fengland%2Fpremier-league%2F2014-2015%2Fstandings%2F%22%20and%20xpath%3D%27%2F%2F*%5B%40id%3D%22standings_1a%22%5D%27&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=
+    // https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20htmlstring
+    //%20where%20url%3D'http%3A%2F%2Fstackoverflow.com%2F'&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=
+
+    var yql_query = 'select * from htmlstring where url="https://www.scorespro.com/soccer/england/premier-league/2017-2018/standings/"';
     yql_query += " and xpath='//*[@id=\"standings_1a\"]'";
-    yql_query = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(yql_query) + '&format=html&callback=?';
+    yql_query = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(yql_query) + '&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?';
 
     $.getJSON(yql_query, function (data) {
 
+        console.log(data);
         var eplTableBody = $('#epl_table tbody');
 
         $(data.results[0]).find('tbody').each(function (i, tbody) {
