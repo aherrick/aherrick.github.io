@@ -205,7 +205,7 @@ function handleAuthor() {
     authors['msav235'] = {
         name: 'Matt Savage',
         handle: 'msav235',
-        profileImg: 'https://pbs.twimg.com/profile_images/588891052490100736/pGyNS-5n.jpg'
+        profileImg: 'https://pbs.twimg.com/profile_images/825456150388817924/eZAScYSq_400x400.jpg'
     };
 
     authors['jbpatton'] = {
