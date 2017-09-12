@@ -1,8 +1,3 @@
-$(function () {
-
-    twitterFetcher.fetch('354597188057325569', '', 7, true, true, true, '', true, handleTweets);
-});
-
 
 function handleTweets(tweets) {
 
@@ -17,3 +12,24 @@ function handleTweets(tweets) {
         n++;
     }
 }
+
+$(function () {
+    
+    
+    var smptweets = {
+      "id": '354597188057325569',
+      "domId": '',
+      "maxTweets": 7,
+      "enableLinks": true,
+      "showUser": true,
+      "showTime": true,
+      "dateFunction": '',
+      "showRetweet": false,
+      "customCallback": handleTweets,
+      "showInteraction": false
+    };
+
+    twitterFetcher.fetch(smptweets);
+});
+
+
