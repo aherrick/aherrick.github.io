@@ -12,7 +12,7 @@ $(function () {
 
     $.getJSON(yql_query, function (data) {
 
-        console.log(data.query.results.result);
+        //console.log(data.query.results.result);
         var eplTableBody = $('#epl_table tbody');
 
         $(data.query.results.result).find('tbody').each(function (i, tbody) {
