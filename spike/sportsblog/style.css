@@ -146,7 +146,8 @@ header {
 
 #twitter li div a img {
     float: left;
-    width: 42px;
+    width: 28px;
+    margin-right: 8px;
 }
 
 #twitter > li > div > a > span:nth-child(2) > span:nth-child(1) {
@@ -162,7 +163,7 @@ header {
 
 #twitter li p.tweet {
     clear: left;
-    margin-top: 8px;
+    padding-top: 8px;
 }
 
 #twitter li p.timePosted {
