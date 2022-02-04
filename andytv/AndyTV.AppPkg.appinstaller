@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
 	Uri="https://aherrick.github.io/andytv/AndyTV.AppPkg.appinstaller"
-	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	Version="1.0.1.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="88e81c15-f062-4abd-b392-835c347a3876"
-		Version="1.0.0.0"
+		Version="1.0.1.0"
 		Publisher="CN=andrew herrick"
-		Uri="https://aherrick.github.io/andytv/AndyTV.AppPkg_1.0.0.0_Test/AndyTV.AppPkg_1.0.0.0_x64.msixbundle" />
+		Uri="https://aherrick.github.io/andytv/AndyTV.AppPkg_1.0.1.0_Test/AndyTV.AppPkg_1.0.1.0_x64.msixbundle" />
 	<UpdateSettings>
 		<OnLaunch
 			HoursBetweenUpdateChecks="0" />
